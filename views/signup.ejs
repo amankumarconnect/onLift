@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <form action="/signup" method="post" enctype="multipart/form-data">
+        <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" required>
+        <input type="number" name="weight" id="weight" placeholder="Weight (in KGs)" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="file" name="photo" id="photo">
+        <button type="submit" class="submit-btn">SignUp</button>
+    </form>
+</body>
+</html>

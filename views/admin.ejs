@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <a class="logout" href="/logout"><button>LOGOUT</button></a>
+    <div class="content">
+        <div class="signals">
+            <div class="order">
+                <div class="order-signal"></div>
+                <div class="order-text">ORDER</div>
+            </div>
+            <button class="rescue">RESCUE</button>
+        </div>
+        <div class="action">
+            <button class="camera">CAMERA</button>
+            <button class="go">GO</button>
+        </div>
+        <div class="status">
+            <div class="status-text">STATUS</div>
+            <div class="status-signal">
+                <div class="floor"><%- liftFloor %></div>
+                <div class="next">
+                    <% if (nextUp) { %>
+                        &uarr;
+                      <% } else { %>
+                        &darr;
+                      <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="showUsersInside"></div>
+    <script src="/js/admin.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="/css/user.css">
+</head>
+<body>
+    <div class="welcome">
+        <h2>Welcome <%- userApi.username %></h2>
+        <img src="<%- userApi.photo %>" alt="user image">
+    </div>
+    <a class="logout" href="/logout"><button>LOGOUT</button></a>
+    <div class="content">
+        <div class="signals">
+            <div class="order">
+                <div class="order-signal"></div>
+                <div class="order-text">ORDER</div>
+            </div>
+            <div class="load">
+                <div class="load-signal"></div>
+                <div class="load-text">LOAD</div>
+            </div>
+        </div>
+        <button class="enter">ENTER</button>
+        <div class="status">
+            <div class="status-text">STATUS</div>
+            <div class="status-signal">
+                <div class="floor"><%- liftFloor %></div>
+                <div class="next">
+                    <% if (nextUp) { %>
+                        &uarr;
+                      <% } else { %>
+                        &darr;
+                      <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chooseFloor">
+        <h2>Choose Floor:</h2>
+        <div class="floors">
+            <button>0</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+        </div>
+    </div>
+    <div class="currentFloor">Floor - <%- userFloor %></div>
+    <script src="/js/user.js"></script>
+</body>
+</html>
+
