@@ -50,19 +50,11 @@ The application is built using the MEEN stack (MongoDB, Express.js, EJS, Node.js
 
 ## Screenshots
 
-*(Include screenshots here showing the different screens and states mentioned above: Login, Signup, User Dashboard (different states: waiting, enter now, inside), Admin Dashboard (showing GO, CAMERA, ORDER, RESCUE), Camera View, Out of Order state etc.)*
+![Alt text](images/Screenshot%202025-04-30%20121832.png)
 
-*Example:*
-*Login Screen*
-![Login Screen](path/to/your/screenshot-login.png)
+![Alt text](images/Screenshot%202025-04-30%20121946.png)
 
-*Admin Dashboard*
-![Admin Dashboard](path/to/your/screenshot-admin.png)
-
-*User View - Waiting*
-![User Waiting](path/to/your/screenshot-user-waiting.png)
-
-*(Add more screenshots as needed)*
+![Alt text](images/Screenshot%202025-04-30%20122927.png)
 
 ## Setup and Installation
 
@@ -82,10 +74,6 @@ The application is built using the MEEN stack (MongoDB, Express.js, EJS, Node.js
     ```dotenv
     # .env file
     MONGODB_URI=your_mongodb_connection_string # e.g., mongodb://localhost:27017/onlift or MongoDB Atlas URI
-    PORT=3000 # Or any port you prefer
-    SESSION_SECRET=a_strong_random_secret_key_for_sessions
-    ADMIN_USERNAME=admin # Define the username for the admin account
-    # Add any other environment variables your app uses (e.g., Cloudinary keys for image upload if applicable)
     ```
     *Note: Ensure you have a running MongoDB instance accessible via the `MONGODB_URI`.*
 
@@ -93,10 +81,6 @@ The application is built using the MEEN stack (MongoDB, Express.js, EJS, Node.js
     *   For development (if you have `nodemon`):
         ```bash
         npm run dev
-        ```
-    *   For production/standard run:
-        ```bash
-        npm start
         ```
     Or directly using node:
     ```bash
@@ -137,9 +121,3 @@ This project is primarily a **learning exercise** and a functional prototype dem
 *   Implement actual image storage/retrieval (e.g., Cloudinary, S3) instead of just storing paths/placeholders.
 *   Add more detailed error handling and user feedback.
 *   Unit and integration tests.
-
-![Alt text](images/Screenshot%202025-04-30%20121832.png)
-
-![Alt text](images/Screenshot%202025-04-30%20121946.png)
-
-![Alt text](images/Screenshot%202025-04-30%20122927.png)
